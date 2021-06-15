@@ -10,6 +10,7 @@ int main() {
     std::cin >> y;
     
     std::cout << "Sum of the two numbers: " << x + y << std::endl;
+    std::cout << "Subtraction of the two numbers: " << x - y << std::endl;
     
     return 0;
 }
