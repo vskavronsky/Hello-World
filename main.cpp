@@ -1,7 +1,22 @@
 #include <iostream>
 
+void action(int x, int y, char operation) {
+    switch (operation) {
+        case '+':
+            std::cout << "Sum of the numbers: " << x + y << std::endl;
+            break;
+        case '-':
+            std::cout << "Subtraction of the numbers: " << x - y << std::endl;
+            break;
+        default:
+            std::cout << "Unknown operation" << std::endl;
+            break;        
+    }
+}
+
 int main() {
     int x, y;
+    char operation;
     
     std::cout << "Enter first number: ";
     std::cin >> x;
@@ -9,8 +24,10 @@ int main() {
     std::cout << "Enter second number: ";
     std::cin >> y;
     
-    std::cout << "Sum of the two numbers: " << x + y << std::endl;
-    std::cout << "Subtraction of the two numbers: " << x - y << std::endl;
+    std::cout << "Choose operation: ";
+    std::cin >> operation;
+    
+    action(x, y, operation); 
     
     return 0;
 }
