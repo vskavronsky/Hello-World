@@ -12,7 +12,7 @@ void action(int x, int y, char operation) {
             std::cout << "Division of the numbers: " << x / y << std::endl;
             break;
         case '*':
-            std::cout << "Multiplication of the numbers: " << x / y << std::endl;
+            std::cout << "Multiplication of the numbers: " << x * y << std::endl;
             break;
         default:
             std::cout << "Unknown operation" << std::endl;
